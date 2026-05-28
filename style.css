@@ -1,0 +1,148 @@
+/* ==========================================================================
+   CONFIGURAÇÕES GERAIS E RESET
+   ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f9f4; /* Fundo verde bem claro, descansável */
+    color: #2c3e50;
+    line-height: 1.6;
+}
+
+/* ==========================================================================
+   CABEÇALHO (HEADER)
+   ========================================================================== */
+header {
+    background: linear-gradient(135deg, #2e7d32 0%, #1b5e20 100%);
+    color: #ffffff;
+    text-align: center;
+    padding: 60px 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    border-bottom: 5px solid #81c784;
+}
+
+header h1 {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+header p {
+    font-size: 1.3rem;
+    font-style: italic;
+    max-width: 700px;
+    margin: 0 auto;
+    opacity: 0.9;
+}
+
+/* ==========================================================================
+   CONTEÚDO PRINCIPAL (MAIN E SEÇÕES)
+   ========================================================================== */
+main {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+section {
+    background-color: #ffffff;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease;
+}
+
+/* Efeito sutil ao passar o mouse nas seções */
+section:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+    color: #1b5e20;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    padding-bottom: 8px;
+    border-bottom: 3px solid #a5d6a7;
+    display: inline-block;
+}
+
+p {
+    margin-bottom: 15px;
+    font-size: 1.05rem;
+    text-align: justify;
+}
+
+/* ==========================================================================
+   LISTAS E DESTAQUES
+   ========================================================================== */
+ul {
+    list-style-type: none; /* Remove as bolinhas padrão */
+    margin: 20px 0;
+}
+
+li {
+    margin-bottom: 12px;
+    padding-left: 30px;
+    position: relative;
+    font-size: 1.05rem;
+}
+
+/* Ícone customizado para a lista (folha/check fictício) */
+li::before {
+    content: "🌱";
+    position: absolute;
+    left: 0;
+    top: 2px;
+}
+
+.badge {
+    display: inline-block;
+    background-color: #e8f5e9;
+    color: #2e7d32;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.95rem;
+    border: 1px solid #c8e6c9;
+    margin-top: 10px;
+}
+
+/* ==========================================================================
+   BOTÕES E INTERATIVIDADE (JAVASCRIPT)
+   ========================================================================== */
+.btn-interativo {
+    background: linear-gradient(135deg, #4caf50 0%, #388e3c 100%);
+    color: white;
+    border: none;
+    padding: 14px 28px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    display: block;
+    margin: 20px 0;
+}
+
+.btn-interativo:hover {
+    background: linear-gradient(135deg, #66bb6a 0%, #43a047 100%);
+    transform: scale(1.03);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.btn-interativo:active {
+    transform: scale(0.98);
+}
+
+#mensagem-js {
+    min-height: 5

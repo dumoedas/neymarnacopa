@@ -1,0 +1,99 @@
+/* ==========================================================================
+   ESTILIZAÇÃO DO NOVO CABEÇALHO (HEADER)
+   ========================================================================== */
+header {
+    background: linear-gradient(135deg, #1b5e20 0%, #2e7d32 50%, #4caf50 100%);
+    color: #ffffff;
+    padding: 30px 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    border-bottom: 5px solid #81c784;
+    text-align: center;
+}
+
+/* Identificadores do topo */
+.header-top-info {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.nre-tag, .programa-tag {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 6px 12px;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Títulos */
+header h1 {
+    font-size: 2.6rem;
+    margin: 0;
+    font-weight: 800;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.subtitulo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+header h2 {
+    font-size: 1.5rem;
+    color: #fffde7; /* Amarelo claro para destacar */
+    margin: 0;
+    border-bottom: none; /* Remove a borda padrão do h2 global */
+    padding-bottom: 0;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.folha-icone {
+    font-size: 1.4rem;
+}
+
+.slogan {
+    font-size: 1.1rem;
+    font-style: italic;
+    opacity: 0.95;
+    margin-bottom: 25px;
+}
+
+/* Menu de Navegação */
+.header-nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 8px;
+    max-width: 500px;
+    margin: 0 auto;
+    backdrop-filter: blur(5px); /* Efeito de vidro fosco sutil */
+}
+
+.header-nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.95rem;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.header-nav a:hover {
+    color: #fffde7;
+    transform: scale(1.05);
+}
+
+/* Ajuste de responsividade para telas pequenas */
+@media (max-width: 600px) {
+    header h1 { font-size: 1.8rem; }
+    header h2 { font-size: 1.2rem; }
+    .header-top-info { flex-direction: column; gap: 5px; }
+    .header-nav { flex-direction: column; gap: 10px; }
+}

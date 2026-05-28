@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Agrinho 2026 - Agro Forte, Futuro Sustentável</title>
+    <style>
+        /* Estilos Globais */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f9f4;
+            color: #333;
+        }
+
+        /* Cabeçalho */
+        header {
+            background: linear-gradient(135deg, #2e7d32, #1b5e20);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            margin: 10px 0 0 0;
+            font-size: 1.2em;
+            font-style: italic;
+            opacity: 0.9;
+        }
+
+        /* Container Principal */
+        main {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        /* Seções */
+        section {
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        section:last-child {
+            border-bottom: none;
+        }
+
+        h2 {
+            color: #2e7d32;
+            border-left: 5px solid #81c784;
+            padding-left: 10px;
+        }
+
+        /* Destaques / Alertas */
+        .badge {
+            background-color: #e8f5e9;
+            color: #2e7d32;
+            padding: 10px;
+            border-radius: 5px;
+            font-weight: bold;
+            border-left: 4px solid #4caf50;
+        }
+
+        /* Rodapé */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            font-size: 0.9em;
+            margin-top: 40px;
+        }
+
+        /* Botão Interativo (JavaScript) */
+        .btn-interativo {
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-size: 1em;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .btn-interativo:hover {
+            background-color: #388e3c;
+        }
+
+        #mensagem-js {
+            margin-top: 15px;
+            font-weight: bold;
+            color: #1b5e20;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Agrinho Programação 2026</h1>
+        <p>"Agro forte, Futuro Sustentável: Equilíbrio entre Produção e Meio Ambiente"</p>
+    </header>
+
+    <main>
+        <section id="sobre">
+            <h2>Sobre o Projeto</h2>
+            <p>Seja bem-vindo ao repositório do nosso projeto desenvolvido para o **Agrinho Programação 2026**. Aqui unimos a tecnologia ao desenvolvimento sustentável no campo.</p>
+            <div class="badge">
+                Categoria: Ensino Médio (HTML, CSS e JavaScript)
+            </div>
+        </section>
+
+        <section id="proposta">
+            <h2>Nossa Solução Sustentável</h2>
+            <p><em>[Substitua este texto pela descrição da ideia do seu grupo! Explique como a sua aplicação ajuda a equilibrar a produção agrícola e a preservação do meio ambiente.]</em></p>
+            
+            <ul>
+                <li><strong>Objetivo 1:</strong> Promover a sustentabilidade no campo.</li>
+                <li><strong>Objetivo 2:</strong> Otimizar o uso de recursos naturais (água, solo, energia).</li>
+                <li><strong>Objetivo 3:</strong> Conscientizar a comunidade escolar.</li>
+            </ul>
+        </section>
+
+        <section id="interacao">
+            <h2>Interatividade do Projeto</h2>
+            <p>Clique no botão abaixo para ver o JavaScript em ação!</p>
+            <button class="btn-interativo" onclick="mostrarDica()">Receber Dica Sustentável</button>
+            <p id="mensagem-js"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Desenvolvido para o Programa Programação Paraná | Núcleo Regional de Educação</p>
+    </footer>
+
+    <script>
+        function mostrarDica() {
+            const dicas = [
+                "💡 Economia de água: Sistemas de irrigação por gotejamento reduzem o desperdício em até 60%!",
+                "🌱 Rotação de culturas: Alternar o que é plantado ajuda a manter o solo fértil e evita pragas.",
+                "☀️ Energia limpa: Painéis solares em propriedades rurais reduzem custos e a pegada de carbono!",
+                "🚜 Tecnologia no campo: Sensores de umidade ajudam a irrigar a plantação apenas quando necessário."
+            ];
+
+            // Sorteia uma dica aleatória da lista
+            const dicaAleatoria = dicas[Math.floor(Math.random() * dicas.length)];
+            
+            // Exibe a dica na página
+            document.getElementById('mensagem-js').innerText = dicaAleatoria;
+        }
+    </script>
+</body>
+</html>
+<link rel="stylesheet" href="style.css">
+<script src="main.js"></script>
+</body>
+</html>
+<header>
+    <div class="header-top-info">
+        <span class="nre-tag">NRE Guarapuava</span>
+        <span class="programa-tag">Programa Programação Paraná</span>
+    </div>
+
+    <div class="header-main-title">
+        <h1>Agrinho Programação 2026</h1>
+        <div class="subtitulo-container">
+            <span class="folha-icone">🌱</span>
+            <h2>Agro Forte, Futuro Sustentável</h2>
+            <span class="folha-icone">🌱</span>
+        </div>
+        <p class="slogan">Equilíbrio entre Produção e Meio Ambiente</p>
+    </div>
+
+    <nav class="header-nav">
+        <a href="#sobre">Sobre o Projeto</a>
+        <a href="#proposta">Nossa Solução</a>
+        <a href="#interacao">Dicas Sustentáveis</a>
+    </nav>
+</header>
